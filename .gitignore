@@ -1,0 +1,9 @@
+bin/
+build/
+dist/
+include/
+lib/
+local/
+*~
+*.pyc
+saron.egg-info/

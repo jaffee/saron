@@ -1,0 +1,17 @@
+* SARON
+From `sar` the utility for system activity reports, and a pun on Sauron, and the "all seeing eye".
+
+A flask app that will ssh to a bunch of hosts, run sar, and the graph the results for you.
+
+Very much under development, so you'll need to do a bit more than
+`setup.py install`, i.e. get jquery and jquery sparklines, and place
+them in the static folder, make sure sar is installed, edit
+commands.py with the hosts and specific commands you want to run, etc, etc.
+
+
+The end goal here is to package this up in such a way that you can SCP
+it to one host on a cluster, start it up and have monitoring across
+the (small) cluster. Cluster nodes don't need direct internet access
+for an install, they just need to have sar and passwordless ssh
+access. As far as I know, there is no dead simple monitoring package
+that is stupidly easy to install and configure.
